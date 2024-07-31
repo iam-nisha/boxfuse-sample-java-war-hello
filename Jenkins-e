@@ -8,7 +8,7 @@ pipeline {
               }
             }
             stage("build"){
-               steps
+               steps { 
                        sh "mvn clean package"
                        sh "mv target/*.war target/boxfuse-sample-java-war-hello.war"
                       }
