@@ -49,4 +49,18 @@
             </plugin>
         </plugins>
     </build>
+	
+    <distributionManagement>
+        <repository>
+            <id>nexusRepo</id>
+            <name>Nexus Releases</name>
+            <url>http://15.207.87.234:8081/repository/sample_releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexusRepo</id>
+            <name>Nexus Snapshot</name>
+            <url>http://15.207.87.234:8081/repository/sample_snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
+
